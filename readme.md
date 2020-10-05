@@ -1,6 +1,6 @@
 # rust-guessing-game
 
-Simple guessing game written in [rust](https://www.rust-lang.org/)
+Number guessing game written in [rust](https://www.rust-lang.org/)
 
 ## Setup
 
