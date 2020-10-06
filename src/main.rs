@@ -2,10 +2,6 @@ use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
 
-fn try_again() -> &'static str {
-    return "try again";
-}
-
 fn you_win(num: u32) {
     println!("{} is correct, you win!", num);
 }
@@ -35,12 +31,10 @@ fn game(min: u32, max: u32) {
 
         match guess.cmp(&secret_number) {
             Ordering::Less => {
-                println!("{} is too small, {}!", &guess, try_again());
-                try_again();
+                println!("{} is too small, try again!", &guess);
             }
             Ordering::Greater => {
-                println!("{} is too large, {}!", &guess, try_again());
-                try_again();
+                println!("{} is too large, try again!", &guess);
             }
             Ordering::Equal => {
                 you_win(secret_number);
