@@ -14,10 +14,10 @@ fn generate_random_number_between(min: u32, max: u32) -> u32 {
     return rand::thread_rng().gen_range(min, max);
 }
 
-fn main() {
-    println!("Guess the number between 1 & 100\n");
+fn game(min: u32, max: u32) {
+    println!("Guess the number between {} & {}\n", min, max);
 
-    let secret_number = generate_random_number_between(1, 101);
+    let secret_number = generate_random_number_between(min, max);
 
     println!("Please input your guess.\n");
 
@@ -48,4 +48,8 @@ fn main() {
             }
         }
     }
+}
+
+fn main() {
+    game(1, 101)
 }
