@@ -45,5 +45,5 @@ fn game(min: u32, max: u32) {
 }
 
 fn main() {
-    game(1, 101)
+    game(1, 100)
 }
