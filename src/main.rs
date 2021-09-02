@@ -7,7 +7,7 @@ fn you_win(num: u32) {
 }
 
 fn generate_random_number_between(min: u32, max: u32) -> u32 {
-    return rand::thread_rng().gen_range(min, max);
+    return rand::thread_rng().gen_range(min..max);
 }
 
 fn game(min: u32, max: u32) {
