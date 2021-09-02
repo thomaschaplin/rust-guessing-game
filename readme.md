@@ -27,3 +27,15 @@ Please input your guess.
 54
 54 is correct, you win!
 ```
+
+# Docker Setup
+
+Build
+```
+docker build --rm -f Dockerfile -t thomaschaplin:rust-guessing-game .
+```
+
+Run
+```
+docker run --rm -it thomaschaplin:rust-guessing-game
+```
