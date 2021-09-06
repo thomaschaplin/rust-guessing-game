@@ -16,6 +16,14 @@ Make sure you have [rust](https://www.rust-lang.org/) installed on your machine 
 #### Example output:
 
 ```
+Please input your minimum number.
+
+1
+
+Please input your maximum number.
+
+100
+
 Guess the number between 1 & 100
 
 Please input your guess.
