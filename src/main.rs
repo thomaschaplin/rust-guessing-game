@@ -53,8 +53,6 @@ fn get_user_defined_input_as_u32() -> u32 {
         .read_line(&mut guess)
         .expect("Failed to read line");
 
-    
-
     parse_guess_as_u32(guess)
 }
 
